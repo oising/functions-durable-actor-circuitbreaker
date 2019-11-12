@@ -37,6 +37,7 @@ namespace Hollan.Function
         {
             Context context = new Context().WithLogger(log);
 
+            
             var exceptions = new List<Exception>();
 
             foreach (EventData eventData in events)

@@ -5,6 +5,10 @@
     <RootNamespace>functions_csharp_durable_actor_circuitbreaker</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="JetBrains.Annotations" Version="2019.1.3" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.0.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.29" />
     <ProjectReference Include="../circuit-library/circuit-library.csproj" />
