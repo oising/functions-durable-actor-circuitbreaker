@@ -1,0 +1,20 @@
+version: 2
+updates:
+- package-ecosystem: nuget
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: Microsoft.Azure.WebJobs.Extensions.DurableTask
+    versions:
+    - 2.4.1
+    - 2.4.2
+  - dependency-name: DotNetEnv
+    versions:
+    - 2.0.0
+    - 2.1.0
+  - dependency-name: Polly
+    versions:
+    - 7.2.1
